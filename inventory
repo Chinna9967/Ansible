@@ -8,7 +8,7 @@ roboshop-us-dev-db-mongodb-01.kpdigital.online
 
 [mongodb:vars]
 MONGO_UN=mongoadmin
-MONGO_DB=categories
+MONGO_DB=databasepwd
 
 [mysql]
 roboshop-us-dev-db-mysql-01.kpdigital.online
