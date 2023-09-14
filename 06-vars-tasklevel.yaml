@@ -1,0 +1,16 @@
+- name: variables at task level
+  hosts: localhost
+  vars:
+    - money: "10000 rs"
+      land: "20 acrs"
+  tasks:
+    - name: inherit the properties and print
+      ansible.builtin.debug:
+        msg: "Money: {{money}}, Land: {{land}}"
+    - name: inherit the prop and add anf overwrite them
+      vars:
+      - money: "28392343 rs"
+        houses: "4 houses"
+      ansible.builtin.debug:
+        msg: "Money: {{money}}, Houses: {{houses}}"
+        
