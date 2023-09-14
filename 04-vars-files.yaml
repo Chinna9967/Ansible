@@ -1,6 +1,6 @@
 - name: variables from files
-  hosts: mongodb #managin the ansible server itself
-  var_files:
+  hosts: localhost #managin the ansible server itself
+  vars_files:
   - variables.yaml
   tasks:
   - name: printing variables
