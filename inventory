@@ -6,6 +6,10 @@
 [mongodb]
 roboshop-us-dev-db-mongodb-01.kpdigital.online
 
+[mongodb:vars]
+MONGO_UN=mongoadmin
+MONGO_DB=categories
+
 [mysql]
 roboshop-us-dev-db-mysql-01.kpdigital.online
 roboshop-us-dev-db-mysql-02.kpdigital.online
