@@ -1,0 +1,6 @@
+- name: variables from cli
+  hosts: localhost
+  tasks:
+  - name: print vars from cli
+    ansible.builtin.debug:
+      msg: "iam learning: {{COURSE}}"
