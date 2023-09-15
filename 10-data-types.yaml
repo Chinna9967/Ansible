@@ -14,18 +14,18 @@
       Docker: 4
   tasks:
   - name: print number variable
-    ansible.builtin.debug
+    ansible.builtin.debug:
       msg: "{{AGE}}"
   - name: print String variable
-    ansible.builtin.debug
+    ansible.builtin.debug:
       msg: "{{NAME}}"
   - name: print Boolean variable
-    ansible.builtin.debug
+    ansible.builtin.debug:
       msg: "{{isDevops}}"
   - name: print List variable
-    ansible.builtin.debug
+    ansible.builtin.debug:
       msg: "{{skills}}"
   - name: print Map variable
-    ansible.builtin.debug
+    ansible.builtin.debug:
       msg: "{{Experience}}"
   
