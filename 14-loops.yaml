@@ -1,0 +1,12 @@
+- name: install multiple packages
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: install packages
+    ansible.builtin.yum:
+      name: {{item}}
+      state: installed
+    loop:
+    - nginx
+    - postmap
+    - mysql
